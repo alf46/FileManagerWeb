@@ -61,14 +61,14 @@
           </ul>
          <form id="frm-save" class="needs-validation" novalidate>
             <div class="form-row">
-              <div class="col-8 col-md-8 mb-3">
+              <div class="col-8 col-md-8">
                 <label for="validationFilename">Filename</label>
                 <div class="input-group">
                   <input id="txtfilename" type="text" class="form-control" id="validationFilename" placeholder="Filename" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">Please choose a filename.</div>
                 </div>
               </div>
-              <div class="col-4 col-md-4 mb-3">
+              <div class="col-4 col-md-4">
                 <label>Format</label>
                 <select id="cbxformat" class="custom-select" required>
                   <option value="">Choose...</option>
@@ -79,7 +79,16 @@
                 <div class="invalid-feedback">Example invalid custom select feedback</div>
               </div>
             </div>
-            <button class="btn btn-secundary" type="submit">Save File</button>
+            <div class="form-row">
+              <div class="col col-sm-12 col-md-12">
+                 <label for="validationTextData">Text Data</label>
+                 <div class="input-group">
+                   <textarea class="form-control" id="textData" placeholder="Enter your text data" required></textarea>
+                   <div class="invalid-feedback">Please enter your text data.</div>
+                 </div>
+              </div>
+            </div>
+            <button class="btn text-white bg-dark mt-3" type="submit">Save File</button>
           </form>
         </div>
       </div>

@@ -6,9 +6,12 @@ $(document).ready(function() {
 
         // Obtener el formato del archivo.
         var format = $('#cbxformat').children("option:selected").val();
+
+        var textData = $('#textData').val();
+
       
-      if(filename != '' && format != ''){
-        var blob = new Blob(['Alfonso Miguel Evangelista Concepción'], {type:'text/plain;charset=utf-8'});
+      if(filename != '' && format != '' && textData != ''){
+        var blob = new Blob([textData], {type:'text/plain;charset=utf-8'});
         saveAs(blob, filename +'.'+ format);
     }
        event.preventDefault();
