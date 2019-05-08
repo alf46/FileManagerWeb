@@ -7,6 +7,7 @@ $(document).ready(function() {
         // Obtener el formato del archivo.
         var format = $('#cbxformat').children("option:selected").val();
 
+        // Obtener los datos.
         var textData = $('#textData').val();
 
       
