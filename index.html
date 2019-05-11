@@ -11,9 +11,7 @@
   <title>File Manager Web With FileSaver.JS</title>
 
   <!-- Bootstrap core CSS -->
-  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -24,7 +22,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">File Manager Web</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,14 +34,14 @@
             <a class="nav-link js-scroll-trigger" href="#save">Save</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Get Json</a>
+            <a class="nav-link js-scroll-trigger" href="#getjson">Get Json</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="bg-secondary text-light">
+  <header class="bg-primary text-light">
     <div class="container text-center" >
       <h1>Welcome to File Manager Web</h1>
       <p class="lead">This is a small file management project with FileSaver.JS</p>
@@ -54,10 +52,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-primary">Save The File</h2>
+          <h2 class="text-dark">Save The File</h2>
           <p class="lead">In this session you will be able to save a text file. You must follow the following steps:</p>
           <ul>
-            <li>Select the file format, the supported formats are: <span class="badge badge-primary badge-pill">text</span> <span class="badge badge-primary badge-pill">json</span> <span class="badge badge-primary badge-pill">xml</span></li>
+            <li>Select the file format, the supported formats are: <span class="badge badge-secondary badge-pill">text</span> <span class="badge badge-secondary badge-pill">json</span> <span class="badge badge-secondary badge-pill">xml</span></li>
             <li>Enter the text according to the selected format.</li>
             <li>The file is generated from client-side.</li>
           </ul>
@@ -90,22 +88,28 @@
                  </div>
               </div>
             </div>
-            <button class="btn btn-primary mt-3" type="submit">Save File</button>
+            <button class="btn btn-outline-dark mt-3" type="submit">Save File</button>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="bg-light">
+  <section id="getjson" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-primary">Get Json Data Rest Api</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          <h2 class="text-dark">Get Json Data Rest Api</h2>
+          <p class="lead">In these session the data from <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users</a> using ajax and then displayed in a table.</p>
+          <p class="lead">You can save this data in an <a href="https://developer.mozilla.org/es/docs/Web/XML/Introducci%C3%B3n_a_XML">XML</a> file.</p>
+          <button id="btnjsondata" class="btn btn-outline-dark">Get Data</button>
+          <button id="btnxmldata" class="btn btn-outline-dark">Save XML Data</button>
         </div>
       </div>
-      <button id="btnjsondata" class="btn btn-primary">Get Data</button>
+      <div class="row mt-3">
+        <div id="jsdata" class="col-lg-8 mx-auto">
+        </div>
+      </div>
     </div>
   </section>
 
